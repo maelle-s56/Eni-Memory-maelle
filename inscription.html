@@ -27,7 +27,6 @@
       <h2 id="inscription">Inscrivez-vous.</h2>
       <form action="" method="post">
         <label for="nom">Nom d'utilisateur :</label>
-        <br />
         <input
           type="text"
           id="nom"
@@ -39,7 +38,6 @@
           title="Saisissez votre nom (3caractères min.)" />
         <br />
         <label for="email">Entrez votre email : </label>
-        <br />
         <input
           type="email"
           id="email"
@@ -49,7 +47,6 @@
           title="Saisissez votre adresse email" />
         <br />
         <label for="motdePasse">Mot de passe :</label>
-        <br />
         <input
           type="password"
           id="motdePasse"
@@ -59,9 +56,10 @@
           pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}"
           title="Saisissez votre mot de passe de minimum 6 caractères comportant
           au moins un symbole et un chiffre" />
-        <p>Au moins un symbole, un chiffre, ainsi que 6 caractères minimum.</p>
+        <p id="texteMdp">
+          Au moins un symbole, un chiffre, ainsi que 6 caractères minimum.
+        </p>
         <label for="confMotdePasse">Confimez le mot de passe :</label>
-        <br />
         <input
           type="password"
           id="confMotdePasse"
@@ -72,8 +70,10 @@
           title="Saisissez votre mot de passe de minimum 6 caractères comportant
           au moins un symbole et un chiffre" />
         <br />
-        <input type="submit" value="Création du compte" />
-        <input type="reset" value="Annuler" />
+        <div class="boutons">
+          <input class="bouton" type="submit" value="Création du compte" />
+          <input class="bouton" type="reset" value="Annuler" />
+        </div>
       </form>
     </fieldset>
   </body>

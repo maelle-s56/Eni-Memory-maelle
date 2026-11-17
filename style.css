@@ -62,13 +62,59 @@ fieldset{
 }
 #inscription{
     text-align: center;
-    font-size: 30px;
+    font-size: 35px;
     font-weight: bold;
-    margin: 0px;
+    margin-bottom: 25px;
+    margin-top: 0px;
 }
 .menu :hover {
     background-color: rgb(92, 91, 88);
     font-weight: bold;
     color: rgb(238, 186, 229);
     cursor: pointer;
+}
+label {
+    display: block;
+    font-size: 17px;
+}
+
+input {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: black;
+    color: rgb(238, 186, 229);
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid white;
+    color: white;
+    padding: 8px 0;
+    outline: none;
+    margin-bottom: 10px;
+}
+#texteMdp{
+    font-size: 75%;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+.boutons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  border: none;
+}
+.boutons :hover{
+    cursor: pointer;
+    background-color: rgb(168, 168, 219);
+    font-weight: bold;
+    transform: scale(1.1);
+}
+
+.bouton {
+  background-color: lavender;
+  color: black;
+  transition: transform 0.2s ease;
 }
