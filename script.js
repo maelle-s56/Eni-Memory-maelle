@@ -7,25 +7,24 @@ const piment = "/ressources/memory-legume/5.svg";
 const fraise = "/ressources/memory-legume/6.svg";
 
 let nbCoup = 0;
-let cartesRetournées = 0;
+let cartesRetournees = 0;
 
 function init() {
     $("td").on("click", function () {
-        const img = $(this).find("img");
+        const carte = $(this).find(".carte");
 
-        // si la carte est déjà retournée, on ne fait rien
-        if (img.attr("src") !== dosCarte) {
+        if (carte.hasClass("retournee")) {
             return;
         }
 
-        img.attr("src", pomme);
-        cartesRetournées++;
-        if (cartesRetournées ===2){
+        carte.addClass("retournee");
+
+        cartesRetournees++;
+        if (cartesRetournees === 2) {
             nbCoup++;
             $("#nbCoup").text("Nombre de coups : " + nbCoup);
-            cartesRetournées = 0;
+            cartesRetournees = 0;
         }
-        
     });
 }
 
