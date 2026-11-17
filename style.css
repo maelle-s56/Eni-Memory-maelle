@@ -10,20 +10,22 @@ h1{
     color :rgb(11, 95, 168);
     text-align: center;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 50px;
+    font-size: 65px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+
     
 
 }
 nav ul{
     background-color: black;
-    border: white double 5px;
+    border: white solid 3px;
     display: flex;
     list-style-type:none;
     width: 500px;
     margin: 20px auto;
 }
 a{
-    color: white;
+    color: rgb(238, 186, 229);
     text-decoration: none;
     font-size: 20px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -34,7 +36,7 @@ li{
 div{
     background-color: black;
     border: white solid 3px;
-    color: white;
+    color: rgb(238, 186, 229);
     border-radius: 15px;
     width: 700px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -47,4 +49,26 @@ div{
     display: block;
     margin: 0 auto;
     
+}
+fieldset{
+    background-color: black;
+    border: white solid 3px;
+    color: rgb(238, 186, 229);
+    border-radius: 15px;
+    width: 600px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 20px;
+    margin: 5px auto;
+}
+#inscription{
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 0px;
+}
+.menu :hover {
+    background-color: rgb(92, 91, 88);
+    font-weight: bold;
+    color: rgb(238, 186, 229);
+    cursor: pointer;
 }

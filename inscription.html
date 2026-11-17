@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>ENI Memory</title>
+  </head>
+  <body>
+    <h1>ENI Memory</h1>
+    <header>
+      <nav>
+        <ul>
+          <li class="menu"><a href="index.html">Accueil</a></li>
+          <li class="menu">
+            <a href="inscription.html" target="_blank">S'inscrire</a>
+          </li>
+          <li class="menu">
+            <a href="connecter.html" target="_blank">Se connecter</a>
+          </li>
+          <li class="menu"><a href="profil.html" target="_blank">Profil</a></li>
+          <li class="menu"><a href="jeu.html" target="_blank">Jouer</a></li>
+        </ul>
+      </nav>
+    </header>
+    <fieldset>
+      <h2 id="inscription">Inscrivez-vous.</h2>
+      <form action="" method="post">
+        <label for="nom">Nom d'utilisateur :</label>
+        <br />
+        <input
+          type="text"
+          id="nom"
+          name="nom"
+          autofocus
+          required
+          placeholder="3 caractères minimum"
+          pattern="[A-Za-Z]{2,}"
+          title="Saisissez votre nom (3caractères min.)" />
+        <br />
+        <label for="email">Entrez votre email : </label>
+        <br />
+        <input
+          type="email"
+          id="email"
+          name="email"
+          required
+          placeholder="Votre email"
+          title="Saisissez votre adresse email" />
+        <br />
+        <label for="motdePasse">Mot de passe :</label>
+        <br />
+        <input
+          type="password"
+          id="motdePasse"
+          name="motdePasse"
+          required
+          placeholder="Votre mot de passe"
+          pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}"
+          title="Saisissez votre mot de passe de minimum 6 caractères comportant
+          au moins un symbole et un chiffre" />
+        <p>Au moins un symbole, un chiffre, ainsi que 6 caractères minimum.</p>
+        <label for="confMotdePasse">Confimez le mot de passe :</label>
+        <br />
+        <input
+          type="password"
+          id="confMotdePasse"
+          name="confMotdePasse"
+          required
+          placeholder="Confirmez le mot de passe"
+          pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}"
+          title="Saisissez votre mot de passe de minimum 6 caractères comportant
+          au moins un symbole et un chiffre" />
+        <br />
+        <input type="submit" value="Création du compte" />
+        <input type="reset" value="Annuler" />
+      </form>
+    </fieldset>
+  </body>
+</html>
