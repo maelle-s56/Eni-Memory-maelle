@@ -25,7 +25,6 @@ nav ul{
     margin: 20px auto;
 }
 .menu :hover {
-    background-color: rgb(92, 91, 88);
     font-weight: bold;
     color: rgb(238, 186, 229);
     cursor: pointer;
