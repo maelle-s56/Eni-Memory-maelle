@@ -13,15 +13,67 @@
         <ul>
           <li class="menu"><a href="index.html">Accueil</a></li>
           <li class="menu">
-            <a href="inscription.html" target="_blank">S'inscrire</a>
+            <a href="inscription.html">S'inscrire</a>
           </li>
           <li class="menu">
-            <a href="connecter.html" target="_blank">Se connecter</a>
+            <a href="connecter.html">Se connecter</a>
           </li>
-          <li class="menu"><a href="profil.html" target="_blank">Profil</a></li>
-          <li class="menu"><a href="jeu.html" target="_blank">Jouer</a></li>
+          <li class="menu"><a href="profil.html">Profil</a></li>
+          <li class="menu"><a href="jeu.html">Jouer</a></li>
         </ul>
       </nav>
     </header>
+    <fieldset>
+      <h2>Profil</h2>
+      <form action="" method="post">
+        <label for="nom">Nom d'utilisateur :</label>
+        <input
+          type="text"
+          id="nom"
+          name="nom"
+          autofocus
+          required
+          placeholder="ddd"
+          pattern="[A-Za-Z]{2,}"
+          title="Saisissez votre nom (3caractères min.)" />
+        <br />
+        <label for="email">Entrez votre email : </label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          required
+          placeholder="dd@dd.fr"
+          title="Saisissez votre adresse email" />
+        <br />
+        <label for="choixM"> Choix du Memory</label>
+        <select name="choixM" id="choixM">
+          <option value="valeur1">Légumes</option>
+          <option value="valeur2">Animaux</option>
+          <option value="valeur3">Animaux Animés</option>
+          <option value="valeur4">Animaux Domestiques</option>
+          <option value="valeur5">Chiens</option>
+          <option value="valeur6">Dinausaures</option>
+          <option value="valeur7">Dinausres avec Nom</option>
+          <option value="valeur8">Alphabet</option>
+        </select>
+        <img
+          id="apercu"
+          src="/ressources/memory-legume/plaque_legumes.png"
+          alt="Apercçu du choix" />
+        <br />
+        <br />
+        <label for="choixT">Taille du Memory</label>
+        <select name="choixT" id="choixT">
+          <option value="valeur1">4*3</option>
+          <option value="valeur2">4*4</option>
+          <option value="valeur3">5*5</option>
+        </select>
+        <div class="boutons">
+          <input class="bouton" type="submit" value="Enregistrez Option" />
+        </div>
+      </form>
+    </fieldset>
+    <script src="scriptProfil.js"></script>
   </body>
 </html>
