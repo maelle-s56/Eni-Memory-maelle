@@ -76,11 +76,9 @@ label {
 
 input {
   display: block;
-  width: 100%;
   box-sizing: border-box;
   background-color: black;
   color: rgb(238, 186, 229);
-  display: block;
   width: 100%;
   box-sizing: border-box;
   background: transparent;
@@ -90,6 +88,27 @@ input {
   padding: 8px 0;
   outline: none;
   margin-bottom: 10px;
+}
+.champ {
+  display: flex; /* input et image sur la même ligne */
+  align-items: center; /* centrés verticalement */
+  gap: 10px; /* espace entre le champ et l'icône */
+  margin-bottom: 10px; /* remplace le margin-bottom de l'input */
+  border: none;
+  padding: 0px;
+}
+
+.champ input {
+  flex: 1; /* prend toute la place restante */
+  width: auto; /* annule le width: 100% global */
+  margin-bottom: 0;
+  /* évite le décalage vertical */
+}
+
+.champ img {
+  width: 20px; /* annule le width: 100% global */
+  height: 20px;
+  flex-shrink: 0; /* l'icône ne se rétrécit jamais */
 }
 #texteMdp {
   font-size: 75%;
@@ -209,4 +228,10 @@ td {
   background-color: rgb(168, 168, 219);
   font-weight: bold;
   transform: scale(1.05);
+}
+.verif {
+  color: black;
+  font-size: 13px;
+  margin-bottom: 0;
+  margin-top: 5px;
 }

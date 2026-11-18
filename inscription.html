@@ -27,48 +27,64 @@
       <h2 id="inscription">Inscrivez-vous.</h2>
       <form action="" method="post">
         <label for="nom">Nom d'utilisateur :</label>
-        <input
-          type="text"
-          id="nom"
-          name="nom"
-          autofocus
-          required
-          placeholder="3 caractères minimum"
-          pattern="[A-Za-Z]{2,}"
-          title="Saisissez votre nom (3caractères min.)" />
+        <div class="champ">
+          <input
+            type="text"
+            id="nom"
+            name="nom"
+            autofocus
+            required
+            placeholder="3 caractères minimum"
+            pattern="[A-Za-Z]{2,}"
+            title="Saisissez votre nom (3caractères min.)" />
+          <img id="iconeNom" src="ressources/error.svg" alt="" />
+        </div>
+        <p class="verif" id="verifNom">
+          Choisissez un pseudo contenant au moins 3 caractères.
+        </p>
         <br />
         <label for="email">Entrez votre email : </label>
-        <input
-          type="email"
-          id="email"
-          name="email"
-          required
-          placeholder="Votre email"
-          title="Saisissez votre adresse email" />
+        <div class="champ">
+          <input
+            type="email"
+            id="email"
+            name="email"
+            required
+            placeholder="Votre email"
+            title="Saisissez votre adresse email" />
+          <img ed="iconeEmail" src="ressources/error.svg" alt="" />
+        </div>
+        <p class="verif" id="verifEmail">Entrez une adresse mail valide.</p>
         <br />
         <label for="motdePasse">Mot de passe :</label>
-        <input
-          type="password"
-          id="motdePasse"
-          name="motdePasse"
-          required
-          placeholder="Votre mot de passe"
-          pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}"
-          title="Saisissez votre mot de passe de minimum 6 caractères comportant
+        <div class="champ">
+          <input
+            type="password"
+            id="motdePasse"
+            name="motdePasse"
+            required
+            placeholder="Votre mot de passe"
+            pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}"
+            title="Saisissez votre mot de passe de minimum 6 caractères comportant
           au moins un symbole et un chiffre" />
+          <img id="iconeMdp" src="ressources/error.svg" alt="" />
+        </div>
         <p id="texteMdp">
           Au moins un symbole, un chiffre, ainsi que 6 caractères minimum.
         </p>
         <label for="confMotdePasse">Confimez le mot de passe :</label>
-        <input
-          type="password"
-          id="confMotdePasse"
-          name="confMotdePasse"
-          required
-          placeholder="Confirmez le mot de passe"
-          pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}"
-          title="Saisissez votre mot de passe de minimum 6 caractères comportant
+        <div class="champ">
+          <input
+            type="password"
+            id="confMotdePasse"
+            name="confMotdePasse"
+            required
+            placeholder="Confirmez le mot de passe"
+            pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}"
+            title="Saisissez votre mot de passe de minimum 6 caractères comportant
           au moins un symbole et un chiffre" />
+          <img id="iconeMdpVerif" src="ressources/error.svg" alt="" />
+        </div>
         <br />
         <div class="boutons">
           <input class="bouton" type="submit" value="Création du compte" />
@@ -76,5 +92,6 @@
         </div>
       </form>
     </fieldset>
+    <script src="scriptInscription.js"></script>
   </body>
 </html>
