@@ -1,104 +1,100 @@
-body{
-    background: linear-gradient(lavender, rgb(248, 200, 208));
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    min-height: 100%;
-    margin: 0;
-    padding: 0;
+body {
+  background: linear-gradient(lavender, rgb(248, 200, 208));
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
 }
-h1{
-    color :rgb(11, 95, 168);
-    text-align: center;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 65px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-
-    
-
+h1 {
+  color: rgb(11, 95, 168);
+  text-align: center;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 65px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
-nav ul{
-    background-color: black;
-    border: white solid 3px;
-    display: flex;
-    list-style-type:none;
-    width: 500px;
-    margin: 20px auto;
+nav ul {
+  background-color: black;
+  border: white solid 3px;
+  display: flex;
+  list-style-type: none;
+  width: 500px;
+  margin: 20px auto;
 }
 .menu :hover {
-    font-weight: bold;
-    color: rgb(238, 186, 229);
-    cursor: pointer;
+  font-weight: bold;
+  color: rgb(238, 186, 229);
+  cursor: pointer;
 }
-a{
-    color: rgb(238, 186, 229);
-    text-decoration: none;
-    font-size: 20px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+a {
+  color: rgb(238, 186, 229);
+  text-decoration: none;
+  font-size: 20px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
-li{
-    padding: 13px;
+li {
+  padding: 13px;
 }
-div{
-    background-color: black;
-    border: white solid 3px;
-    color: rgb(238, 186, 229);
-    border-radius: 15px;
-    width: 700px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    padding: 20px;
-    margin: 20px auto;
+div {
+  background-color: black;
+  border: white solid 3px;
+  color: rgb(238, 186, 229);
+  border-radius: 15px;
+  width: 700px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  padding: 20px;
+  margin: 20px auto;
 }
-.img_fruit{
-    width: 400px;
-    height: 300px;
-    display: block;
-    margin: 0 auto;
-    
+.img_fruit {
+  width: 400px;
+  height: 300px;
+  display: block;
+  margin: 0 auto;
 }
-fieldset{
-    background-color: black;
-    border: white solid 3px;
-    color: rgb(238, 186, 229);
-    border-radius: 15px;
-    width: 600px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    padding: 20px;
-    margin: 5px auto;
+fieldset {
+  background-color: black;
+  border: white solid 3px;
+  color: rgb(238, 186, 229);
+  border-radius: 15px;
+  width: 600px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  padding: 20px;
+  margin: 5px auto;
 }
-h2{
-    text-align: center;
-    font-size: 35px;
-    font-weight: bold;
-    margin-bottom: 25px;
-    margin-top: 0px;
+h2 {
+  text-align: center;
+  font-size: 35px;
+  font-weight: bold;
+  margin-bottom: 25px;
+  margin-top: 0px;
 }
 
 label {
-    display: block;
-    font-size: 17px;
+  display: block;
+  font-size: 17px;
 }
 
 input {
-    display: block;
-    width: 100%;
-    box-sizing: border-box;
-    background-color: black;
-    color: rgb(238, 186, 229);
-    display: block;
-    width: 100%;
-    box-sizing: border-box;
-    background: transparent;
-    border: none;
-    border-bottom: 1px solid white;
-    color: white;
-    padding: 8px 0;
-    outline: none;
-    margin-bottom: 10px;
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: black;
+  color: rgb(238, 186, 229);
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid white;
+  color: white;
+  padding: 8px 0;
+  outline: none;
+  margin-bottom: 10px;
 }
-#texteMdp{
-    font-size: 75%;
-    margin-bottom: 20px;
-    margin-top: 10px;
+#texteMdp {
+  font-size: 75%;
+  margin-bottom: 20px;
+  margin-top: 10px;
 }
 .boutons {
   display: flex;
@@ -106,11 +102,11 @@ input {
   gap: 10px;
   border: none;
 }
-.boutons :hover{
-    cursor: pointer;
-    background-color: rgb(168, 168, 219);
-    font-weight: bold;
-    transform: scale(1.05);
+.boutons :hover {
+  cursor: pointer;
+  background-color: rgb(168, 168, 219);
+  font-weight: bold;
+  transform: scale(1.05);
 }
 
 .bouton {
@@ -118,49 +114,53 @@ input {
   color: black;
   transition: transform 0.2s ease;
 }
-td{
-    height: 15vh;
-    width: 15vh;
-    text-align: center;
-    border: 1px solid white;
-    border-collapse: collapse;
-    cursor: pointer;
+td {
+  height: 15vh;
+  width: 15vh;
+  text-align: center;
+  border: 1px solid white;
+  border-collapse: collapse;
+  cursor: pointer;
 }
 td:hover {
-    border: 1px black solid;
+  border: 1px black solid;
 }
 img {
-    height: 100%;
-    width: 100%;
+  height: 100%;
+  width: 100%;
 }
-section{
-    background-color: black;
-    border: white solid 3px;
-    color: rgb(238, 186, 229);
-    border-radius: 15px;
-    width: 600px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    padding: 20px;
-    margin: 5px auto;
+section {
+  background-color: black;
+  border: white solid 3px;
+  color: rgb(238, 186, 229);
+  border-radius: 15px;
+  width: 600px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  padding: 20px;
+  margin: 5px auto;
 }
-#nbCoup{
-    text-align: center;
+#nbCoup {
+  text-align: center;
 }
-#consigne{
-    text-align: center;
-    font-size: 20px;
+#consigne {
+  text-align: center;
+  font-size: 20px;
+}
+#relancerPartie {
+  text-align: center;
+  font-size: 20px;
 }
 td {
-  perspective: 600px;   
-}        
+  perspective: 600px;
+}
 
 .carte {
   position: relative;
   width: 100px;
   height: 100px;
-  transform-style: preserve-3d;  
+  transform-style: preserve-3d;
   transition: transform 1s;
-  border: none; 
+  border: none;
 }
 
 .carte img {
@@ -169,7 +169,7 @@ td {
   left: 0;
   width: 100%;
   height: 100%;
-  backface-visibility: hidden;  
+  backface-visibility: hidden;
 }
 
 .face {
