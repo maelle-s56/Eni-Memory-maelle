@@ -35,7 +35,7 @@
             autofocus
             required
             placeholder="3 caractères minimum"
-            pattern="[A-Za-Z]{2,}"
+            pattern="[A-Za-z0-9_]{3,}"
             title="Saisissez votre nom (3caractères min.)" />
           <img id="iconeNom" src="ressources/error.svg" alt="" />
         </div>
@@ -52,7 +52,7 @@
             required
             placeholder="Votre email"
             title="Saisissez votre adresse email" />
-          <img ed="iconeEmail" src="ressources/error.svg" alt="" />
+          <img id="iconeEmail" src="ressources/error.svg" alt="" />
         </div>
         <p class="verif" id="verifEmail">Entrez une adresse mail valide.</p>
         <br />
@@ -64,7 +64,7 @@
             name="motdePasse"
             required
             placeholder="Votre mot de passe"
-            pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}"
+            pattern="(?=.*\d)(?=.*[^A-Za-z0-9]).{6,}"
             title="Saisissez votre mot de passe de minimum 6 caractères comportant
           au moins un symbole et un chiffre" />
           <img id="iconeMdp" src="ressources/error.svg" alt="" />
@@ -72,7 +72,7 @@
         <p id="texteMdp">
           Au moins un symbole, un chiffre, ainsi que 6 caractères minimum.
         </p>
-        <label for="confMotdePasse">Confimez le mot de passe :</label>
+        <label for="confMotdePasse">Confrimez le mot de passe :</label>
         <div class="champ">
           <input
             type="password"
@@ -80,7 +80,7 @@
             name="confMotdePasse"
             required
             placeholder="Confirmez le mot de passe"
-            pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}"
+            pattern="(?=.*\d)(?=.*[^A-Za-z0-9]).{6,}"
             title="Saisissez votre mot de passe de minimum 6 caractères comportant
           au moins un symbole et un chiffre" />
           <img id="iconeMdpVerif" src="ressources/error.svg" alt="" />
