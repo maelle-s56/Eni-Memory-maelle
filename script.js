@@ -1,10 +1,10 @@
-const dosCarte = "/ressources/question.svg";
-const pomme = "/ressources/memory-legume/1.svg";
-const banane = "/ressources/memory-legume/2.svg";
-const brocoli = "/ressources/memory-legume/3.svg";
-const cerise = "/ressources/memory-legume/4.svg";
-const piment = "/ressources/memory-legume/5.svg";
-const fraise = "/ressources/memory-legume/6.svg";
+const dosCarte = "ressources/question.svg";
+const pomme = "ressources/memory-legume/1.svg";
+const banane = "ressources/memory-legume/2.svg";
+const brocoli = "ressources/memory-legume/3.svg";
+const cerise = "ressources/memory-legume/4.svg";
+const piment = "ressources/memory-legume/5.svg";
+const fraise = "ressources/memory-legume/6.svg";
 
 //Tableau des images (sans paires)
 const images = [pomme, banane, brocoli, cerise, piment, fraise];

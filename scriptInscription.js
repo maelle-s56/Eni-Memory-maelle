@@ -14,7 +14,7 @@ const iconeMdpVerif = document.getElementById("iconeMdpVerif");
 
 const error = "/ressources/error.svg";
 const ok = "/ressources/check.svg";
-
+//Je cache les icones
 iconeNom.hidden = true;
 iconeEmail.hidden = true;
 iconeMdp.hidden = true;
@@ -22,6 +22,7 @@ iconeMdpVerif.hidden = true;
 
 let condition = false;
 
+//Je teste la conformité du nom
 nom.addEventListener("input", () => {
   if (nom.value.length >= 3) {
     condition = true;
@@ -36,6 +37,7 @@ nom.addEventListener("input", () => {
   }
 });
 
+//Je teste la conformité de l'email
 email.addEventListener("input", () => {
   if (email.value.match(/^[^\s@]+@[^\s@]+\.[^\s@]+$/)) {
     condition = true;
@@ -49,6 +51,8 @@ email.addEventListener("input", () => {
     iconeEmail.src = "/ressources/error.svg";
   }
 });
+
+//Je déclare mes constantes pour le mot de passe à 3 niveaux
 const verifMdpFaible = document.getElementById("verifMdpFaible");
 const verifMdpTextFaible = document.getElementById("verifMdpTextFaible");
 verifMdpFaible.hidden = true;
@@ -62,6 +66,7 @@ const verifMdpTextFort = document.getElementById("verifMdpTextFort");
 verifMdpFort.hidden = true;
 verifMdpTextFort.hidden = true;
 
+//Je teste la conformité du mdp à trois niveaux (faible, moyen et fort)
 mdp.addEventListener("input", () => {
   if (mdp.value.match(/^(?=.*\d)(?=.*[^A-Za-z0-9]).{9,}$/)) {
     iconeMdp.hidden = false;
@@ -83,6 +88,7 @@ mdp.addEventListener("input", () => {
   }
 });
 
+//Je vérifie que mdp est le même dans les deux champs de saisies
 confMdp.addEventListener("input", () => {
   if (confMdp.value === mdp.value) {
     iconeMdpVerif.hidden = false;
@@ -93,6 +99,7 @@ confMdp.addEventListener("input", () => {
   }
 });
 
+//fonction pour faire apparaitre un texte d'erreur en rouge
 function colorText(id) {
   if (condition === true) {
     id.style.color = "black";
