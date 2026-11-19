@@ -249,7 +249,7 @@ td {
   background-color: yellow;
 }
 #verifMdpFort {
-  background-color: greenyellow;
+  background-color: rgb(131, 196, 33);
 }
 .force-mdp {
   border: none;
@@ -262,7 +262,7 @@ td {
 .verifcouleurText {
   border: none;
   border-radius: 0;
-  width: 30%;
+  width: 28%;
   padding: 0;
   text-align: center;
   font-size: 13px;
