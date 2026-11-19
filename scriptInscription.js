@@ -16,9 +16,9 @@ iconeMdp.hidden = true;
 iconeMdpVerif.hidden = true;
 
 let condition = false;
-let icone = document.getElementById("icone");
+let icone = document.getElementById("iconeNom");
 
-document.getElementById("icone").hidden = true;
+document.getElementById("iconeNom").hidden = true;
 //document.getElementById("impressionnant").hidden = false;
 
 nom.addEventListener("input", () => {
