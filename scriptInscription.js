@@ -26,12 +26,12 @@ nom.addEventListener("input", () => {
   if (nom.value.length >= 3) {
     condition = true;
     colorText(verifNom);
-    document.getElementById("iconeNom").hidden = false;
+    iconeNom.hidden = false;
     iconeNom.src = "/ressources/check.svg";
   } else {
     condition = false;
     colorText(verifNom);
-    document.getElementById("iconeNom").hidden = false;
+    iconeNom.hidden = false;
     iconeNom.src = "/ressources/error.svg";
   }
 });
@@ -40,32 +40,55 @@ email.addEventListener("input", () => {
   if (email.value.match(/^[^\s@]+@[^\s@]+\.[^\s@]+$/)) {
     condition = true;
     colorText(verifEmail);
-    document.getElementById("iconeEmail").hidden = false;
+    iconeEmail.hidden = false;
     iconeEmail.src = "/ressources/check.svg";
   } else {
     condition = false;
     colorText(verifEmail);
-    document.getElementById("iconeEmail").hidden = false;
+    iconeEmail.hidden = false;
     iconeEmail.src = "/ressources/error.svg";
   }
 });
+const verifMdpFaible = document.getElementById("verifMdpFaible");
+const verifMdpTextFaible = document.getElementById("verifMdpTextFaible");
+verifMdpFaible.hidden = true;
+verifMdpTextFaible.hidden = true;
+const verifMdpMoyen = document.getElementById("verifMdpMoyen");
+const verifMdpTextMoyen = document.getElementById("verifMdpTextMoyen");
+verifMdpMoyen.hidden = true;
+verifMdpTextMoyen.hidden = true;
+const verifMdpFort = document.getElementById("verifMdpFort");
+const verifMdpTextFort = document.getElementById("verifMdpTextFort");
+verifMdpFort.hidden = true;
+verifMdpTextFort.hidden = true;
 
 mdp.addEventListener("input", () => {
-  if (mdp.value.match(/^(?=.*\d)(?=.*[^A-Za-z0-9]).{6,}$/)) {
-    document.getElementById("iconeMdp").hidden = false;
+  if (mdp.value.match(/^(?=.*\d)(?=.*[^A-Za-z0-9]).{9,}$/)) {
+    iconeMdp.hidden = false;
     iconeMdp.src = "/ressources/check.svg";
+    verifMdpFort.hidden = false;
+    verifMdpTextFort.hidden = false;
+  } else if (mdp.value.match(/^(?=.*\d)(?=.*[^A-Za-z0-9]).{6,8}$/)) {
+    iconeMdp.hidden = false;
+    iconeMdp.src = "/ressources/check.svg";
+    verifMdpMoyen.hidden = false;
+    verifMdpTextMoyen.hidden = false;
   } else {
-    document.getElementById("iconeMdp").hidden = false;
+    iconeMdp.hidden = false;
     iconeMdp.src = "/ressources/error.svg";
+    if (mdp.value.match(/^[A-Za-z0-9]{1,5}$/)) {
+      verifMdpFaible.hidden = false;
+      verifMdpTextFaible.hidden = false;
+    }
   }
 });
 
 confMdp.addEventListener("input", () => {
   if (confMdp.value === mdp.value) {
-    document.getElementById("iconeMdpVerif").hidden = false;
+    iconeMdpVerif.hidden = false;
     iconeMdpVerif.src = "/ressources/check.svg";
   } else {
-    document.getElementById("iconeMdpVerif").hidden = false;
+    iconeMdpVerif.hidden = false;
     iconeMdpVerif.src = "/ressources/error.svg";
   }
 });
