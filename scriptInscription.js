@@ -70,17 +70,17 @@ verifMdpTextFort.hidden = true;
 mdp.addEventListener("input", () => {
   if (mdp.value.match(/^(?=.*\d)(?=.*[^A-Za-z0-9]).{9,}$/)) {
     iconeMdp.hidden = false;
-    iconeMdp.src = "/ressources/check.svg";
+    iconeMdp.src = "ressources/check.svg";
     verifMdpFort.hidden = false;
     verifMdpTextFort.hidden = false;
   } else if (mdp.value.match(/^(?=.*\d)(?=.*[^A-Za-z0-9]).{6,8}$/)) {
     iconeMdp.hidden = false;
-    iconeMdp.src = "/ressources/check.svg";
+    iconeMdp.src = "ressources/check.svg";
     verifMdpMoyen.hidden = false;
     verifMdpTextMoyen.hidden = false;
   } else {
     iconeMdp.hidden = false;
-    iconeMdp.src = "/ressources/error.svg";
+    iconeMdp.src = "ressources/error.svg";
     if (mdp.value.match(/^[A-Za-z0-9]{1,5}$/)) {
       verifMdpFaible.hidden = false;
       verifMdpTextFaible.hidden = false;
@@ -92,10 +92,10 @@ mdp.addEventListener("input", () => {
 confMdp.addEventListener("input", () => {
   if (confMdp.value === mdp.value) {
     iconeMdpVerif.hidden = false;
-    iconeMdpVerif.src = "/ressources/check.svg";
+    iconeMdpVerif.src = "ressources/check.svg";
   } else {
     iconeMdpVerif.hidden = false;
-    iconeMdpVerif.src = "/ressources/error.svg";
+    iconeMdpVerif.src = "ressources/error.svg";
   }
 });
 
