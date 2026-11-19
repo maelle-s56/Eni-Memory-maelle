@@ -12,8 +12,8 @@ const iconeMdp = document.getElementById("iconeMdp");
 const confMdp = document.getElementById("confMotdePasse");
 const iconeMdpVerif = document.getElementById("iconeMdpVerif");
 
-const error = "/ressources/error.svg";
-const ok = "/ressources/check.svg";
+const error = "ressources/error.svg";
+const ok = "ressources/check.svg";
 //Je cache les icones
 iconeNom.hidden = true;
 iconeEmail.hidden = true;
@@ -28,12 +28,12 @@ nom.addEventListener("input", () => {
     condition = true;
     colorText(verifNom);
     iconeNom.hidden = false;
-    iconeNom.src = "/ressources/check.svg";
+    iconeNom.src = "ressources/check.svg";
   } else {
     condition = false;
     colorText(verifNom);
     iconeNom.hidden = false;
-    iconeNom.src = "/ressources/error.svg";
+    iconeNom.src = "ressources/error.svg";
   }
 });
 
@@ -43,12 +43,12 @@ email.addEventListener("input", () => {
     condition = true;
     colorText(verifEmail);
     iconeEmail.hidden = false;
-    iconeEmail.src = "/ressources/check.svg";
+    iconeEmail.src = "ressources/check.svg";
   } else {
     condition = false;
     colorText(verifEmail);
     iconeEmail.hidden = false;
-    iconeEmail.src = "/ressources/error.svg";
+    iconeEmail.src = "ressources/error.svg";
   }
 });
 
