@@ -111,18 +111,26 @@ mdp.addEventListener("input", () => {
     iconeMdp.src = "ressources/check.svg";
     verifMdpFort.hidden = false;
     verifMdpTextFort.hidden = false;
+    verifMdpMoyen.hidden = false;
+    verifMdpTextMoyen.hidden = false;
+    verifMdpFaible.hidden = false;
+    verifMdpTextFaible.hidden = false;
+
     // MOYEN : entre 6 et 8 caractères, avec au moins 1 chiffre et 1 caractère spécial
   } else if (mdp.value.match(/^(?=.*\d)(?=.*[^A-Za-z0-9]).{6,8}$/)) {
     iconeMdp.hidden = false;
     iconeMdp.src = "ressources/check.svg";
     verifMdpMoyen.hidden = false;
     verifMdpTextMoyen.hidden = false;
+    verifMdpFaible.hidden = false;
+    verifMdpTextFaible.hidden = false;
+
     // Sinon : mot de passe non conforme, on affiche l'icône d'erreur
   } else {
     iconeMdp.hidden = false;
     iconeMdp.src = "ressources/error.svg";
-    // FAIBLE : 1 à 5 caractères, uniquement des lettres et des chiffres
-    if (mdp.value.match(/^[A-Za-z0-9]{1,5}$/)) {
+    // FAIBLE : 1 à 6 caractères, uniquement des lettres
+    if (mdp.value.match(/^[A-Za-z]{1,6}$/)) {
       verifMdpFaible.hidden = false;
       verifMdpTextFaible.hidden = false;
     }
